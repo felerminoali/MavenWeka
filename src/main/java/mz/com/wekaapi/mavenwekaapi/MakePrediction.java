@@ -7,6 +7,7 @@ package mz.com.wekaapi.mavenwekaapi;
 
 import java.io.File;
 import weka.classifiers.trees.J48;
+import weka.classifiers.trees.ADTree;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils.DataSource;
@@ -34,7 +35,7 @@ public class MakePrediction {
 		test.setClassIndex(test.numAttributes()-1);
 		
 		
-		J48 tree = new J48();
+		ADTree tree = new ADTree();
 		
 		tree.buildClassifier(train);
 		
