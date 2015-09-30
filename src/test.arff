@@ -1,0 +1,18 @@
+@relation students_usage_categorical
+
+@attribute n_assign {low,medium,high}
+@attribute n_assign_fail {low,medium,high}
+@attribute n_assign_pass {low,medium,high}
+@attribute n_quiz {low,medium,high}
+@attribute n_quiz_fail {low,medium,high}
+@attribute n_quiz_pass {low,medium,high}
+@attribute finalgrade {fail,pass}
+
+@data
+low,high,low,low,high,low,?
+low,medium,low,high,low,high,?
+medium,low,medium,high,low,high,?
+medium,low,medium,high,low,high,?
+low,high,low,low,high,low,?
+medium,high,low,low,high,low,?
+high,low,high,low,high,low,?
